@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body class="container">
+    <div class="my-5 d-flex flex-column gap-5">
+        <label for="name" class="d-flex gap-3">
+            Name:
+            <input type="text" class="form-control" id="name-field">
+            <button class="btn btn-danger" onclick="delateToLocalStorage('name')">Delate Name</button>
+            <button class="btn btn-success" onclick="sendToLocalStorage('name','name-field')">Send Name</button>
+        </label>
+        <label for="email" class="d-flex gap-3">
+            Email:
+            <input type="text" class="form-control" id="email-field">
+            <button class="btn btn-danger" onclick="delateToLocalStorage('email')">Delate Email</button>
+            <button class="btn btn-success" onclick="sendToLocalStorage('email','email-field')">Send Email</button>
+        </label>
+        <label for="message" class="d-flex gap-3">
+            message:
+            <input type="text" class="form-control" id="message-field">
+            <button class="btn btn-danger" onclick="delateToLocalStorage('message')">Delate message</button>
+            <button class="btn btn-success" onclick="sendToLocalStorage('message','message-field')">Send message</button>
+        </label>
+    </div>
+    <button class="btn btn-warning" onclick="reset()">Reset</button>
+    <button class="btn btn-primary">Send</button>
+
+    <!-- JS File  -->
+    <script src="./JS/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
